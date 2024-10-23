@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Noto+Color+Emoji&display=swap');
+
+.App {
+  width: 750px;
+  text-align: center;
+  margin:10px auto;
+  background-color: whitesmoke;
+  padding: 20px;
+  font-size: 1.2rem;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+body {
+ background-color: cadetblue;
+}
+.parentContainer {
+  border: 2px dashed goldenrod;
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+  /* background-color: cornflowerblue; */
+  /* border: 2px solid; */
+  border-collapse:collapse;
+}
+/* tr,th,td {
+  border: 2px solid; 
+} */
+tr{
+  border-bottom: 2px solid rgba(128, 128, 128,0.3);
+}
+.studentsMarkSheet {
+  display: flex;
+  justify-content: center;
+}
+/* .changeColor {
+  background-color: #D6EEEE;
+} */
+tr:nth-child(even),th:nth-child(even),td:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+tr:hover,h1:hover,caption:hover{
+  background-color: #D6EEEE;
+  color: goldenrod;
+}
+/* .fail:hover{
+  background-color: red;
+  color: white;
+}
+.pass:hover{
+  background-color: green;
+  color: white;
+} */
+ h1 {
+  font-family: "Edu AU VIC WA NT Guides", cursive;
+  font-weight: 900;
+ }
+caption {
+  font-family: "Edu AU VIC WA NT Guides", cursive;
+  font-weight: 900;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+.studentsMarkSheet {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (min-width:0px)and (max-width:768px){
+  
+  .parentContainer,.App {
+    width: 80%;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:cornsilk;
+  
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  table{
+    width: 150%;
+  }
+  tr:hover {
+    font-weight: 900;
+  }
+}
+@media screen and (min-width:768px)and (max-width:992px){
+  .parentContainer,.App {
+    width: 85%;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:seagreen;
+
+  }
+  table{
+    width: 550px;
+  }
+}
+@media screen and (min-width:992px)and (max-width:1200px){
+ 
+  .parentContainer,.App {
+    width: 90%;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: paleturquoise;
+
+  }
+  table{
+    width: 750px;
+    
+  }
+  caption {
+    font-size: 1.5rem;
+    padding: 20px;
+  }
+  
+}
+@media screen and (min-width:1200px)and (max-width:1400px) {
+ 
+  
+  .parentContainer,.App {
+    width: 1200px;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:darkkhaki;
+
+  }
+  table{
+    width: 1000px;
+  }
+  
+}
+@media screen and (min-width:1400px)and (max-width:2000px) {
+  .parentContainer,.App {
+    width: 1200px;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  table{
+    width: 1200px;
+  }
+  caption {
+    font-size:2rem;
+  }
+}
